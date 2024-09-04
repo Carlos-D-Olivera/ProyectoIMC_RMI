@@ -76,7 +76,8 @@ public class VentanaPrincipal extends JFrame{
                 ipServidor = campoIpServidor.getText();
                 invocadorRemoto = new CallHandler();
                 cliente = new Client(ipServidor, puerto, invocadorRemoto);
-                calculoImcRemoto = (IRemotaCalculoImc) cliente.getGlobal(IRemotaCalculoImc.class);
+                calculoImcRemoto = (IRemotaCalculoImc)
+                        cliente.getGlobal(IRemotaCalculoImc.class);
                 btnIniciar.setText("Desconectar");
                 btnIniciar.setForeground(Color.RED);
                 txtEstado.setText("Conectado");
@@ -110,7 +111,7 @@ public class VentanaPrincipal extends JFrame{
                     System.out.println("Enviados los datos\nEsperando respuesta");
                     datos = calculoImcRemoto.calcularImc(datos);
                     System.out.println("IMC: " + datos.getResultado()+"\nMensaje: "+datos.getInterpretacion());
-                    txtResultado.setText(datos.getInterpretacion());
+                    txtResultado.setText(datos.getResultado()+"");
                     txtMensaje.setText(datos.getInterpretacion());
                 } catch (Exception ex) {
                     JOptionPane.showMessageDialog(panelFondo, "Error con el cliente "+ex.getMessage());

@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="panelFondo" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="10" left="25" bottom="30" right="25"/>
     <constraints>
-      <xy x="20" y="20" width="741" height="400"/>
+      <xy x="20" y="20" width="689" height="533"/>
     </constraints>
     <properties>
       <enabled value="true"/>
@@ -141,7 +141,7 @@
               </vspacer>
             </children>
           </grid>
-          <grid id="5955d" layout-manager="GridLayoutManager" row-count="3" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="5955d" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="10" left="10" bottom="10" right="10"/>
             <constraints>
               <tabbedpane title="Calcular IMC"/>
@@ -149,85 +149,9 @@
             <properties/>
             <border type="none"/>
             <children>
-              <component id="a6bdf" class="javax.swing.JLabel">
-                <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                    <preferred-size width="145" height="17"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <font size="18"/>
-                  <text value="Peso:"/>
-                </properties>
-              </component>
-              <component id="741c0" class="javax.swing.JLabel">
-                <constraints>
-                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                    <preferred-size width="145" height="17"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <font size="18"/>
-                  <text value="Altura:"/>
-                </properties>
-              </component>
-              <component id="8dd0b" class="javax.swing.JTextField" binding="txtMensaje">
-                <constraints>
-                  <grid row="2" column="3" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="40"/>
-                  </grid>
-                </constraints>
-                <properties/>
-              </component>
-              <hspacer id="6bcb1">
-                <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-              </hspacer>
-              <component id="7de26" class="javax.swing.JLabel">
-                <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                    <preferred-size width="145" height="17"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <font size="18"/>
-                  <text value="IMC:"/>
-                </properties>
-              </component>
-              <component id="f868f" class="javax.swing.JTextField" binding="campoPeso">
-                <constraints>
-                  <grid row="0" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="40"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <font size="18"/>
-                </properties>
-              </component>
-              <component id="28f26" class="javax.swing.JTextField" binding="campoAltura">
-                <constraints>
-                  <grid row="1" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="40"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <font size="18"/>
-                </properties>
-              </component>
-              <component id="fdf35" class="javax.swing.JLabel" binding="txtResultado">
-                <constraints>
-                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <font size="18"/>
-                  <foreground color="-1765599"/>
-                  <text value="0.0"/>
-                </properties>
-              </component>
               <component id="9a21e" class="javax.swing.JButton" binding="btnCalcular">
                 <constraints>
-                  <grid row="0" column="5" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="0" column="3" row-span="2" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
                     <preferred-size width="30" height="120"/>
                   </grid>
                 </constraints>
@@ -237,6 +161,83 @@
                   <margin top="10" left="20" bottom="10" right="20"/>
                   <text value="Calcular"/>
                 </properties>
+              </component>
+              <component id="28f26" class="javax.swing.JTextField" binding="campoAltura">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="40"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="18"/>
+                </properties>
+              </component>
+              <component id="f868f" class="javax.swing.JTextField" binding="campoPeso">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="40"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="18"/>
+                </properties>
+              </component>
+              <component id="fdf35" class="javax.swing.JLabel" binding="txtResultado">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="18"/>
+                  <foreground color="-1765599"/>
+                  <text value="0.0000"/>
+                </properties>
+              </component>
+              <component id="a6bdf" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="145" height="17"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="18"/>
+                  <horizontalAlignment value="4"/>
+                  <text value="Peso:"/>
+                </properties>
+              </component>
+              <component id="741c0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="145" height="17"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="18"/>
+                  <horizontalAlignment value="4"/>
+                  <text value="Altura:"/>
+                </properties>
+              </component>
+              <component id="7de26" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="145" height="17"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="18"/>
+                  <horizontalAlignment value="4"/>
+                  <text value="IMC:"/>
+                </properties>
+              </component>
+              <component id="8dd0b" class="javax.swing.JTextField" binding="txtMensaje">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="40"/>
+                    <maximum-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
               </component>
             </children>
           </grid>
