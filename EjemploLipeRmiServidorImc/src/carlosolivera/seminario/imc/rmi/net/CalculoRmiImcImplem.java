@@ -1,0 +1,34 @@
+package carlosolivera.seminario.imc.rmi.net;
+
+import carlosolivera.seminario.imc.rmi.lib.DatosImc;
+import carlosolivera.seminario.imc.rmi.lib.IRemotaCalculoImc;
+
+public class CalculoRmiImcImplem implements IRemotaCalculoImc {
+
+    private DatosImc datos;
+
+    public CalculoRmiImcImplem() {
+
+    }
+
+    @Override
+    public DatosImc calcularImc(DatosImc datosImc) {
+        float resultado = 0;
+        if(datos.getPeso()<=0 || datos.getAltura()<=0){
+            datos.setInterpretacion("ERROR: El peso y la altura deben ser mayor que 0");
+            return datos;
+        }else{
+            resultado = datos.getPeso()/(datos.getAltura()*datos.getAltura());
+            datos.setResultado(resultado);
+            if(resultado<18.5){
+                datos.setInterpretacion("Debe consultar un Medico, tu peso es muy bajo");
+            }else if(resultado>=18.5 && resultado<=24.9){
+                datos.setInterpretacion("Debes bajar un poco de peso");
+            }else{
+                datos.setInterpretacion("Debes consultar un Medico, tu peso es muy bajo");
+            }
+            System.out.println(datos.getInterpretacion());
+            return datos;
+        }
+    }
+}
